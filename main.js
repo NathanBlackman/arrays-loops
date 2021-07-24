@@ -32,3 +32,11 @@ const teamTwo = [{
     uniqueThing: "Has pet Gecko named 'Gre'",
     image: "https://avatars.githubusercontent.com/u/86082231?v=4"
 }];
+
+const filter = (array, email, color) => {
+    return teamTwo.filter(teamMate => teamMate.email === email && teamMate.favoriteColor === color);
+}
+
+const testArray = ["bees", "peas", "Wiis", "skis"];
+
+console.log(filter(teamTwo, "hello@ellelawrence.com", "black"));
