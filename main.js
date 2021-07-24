@@ -40,3 +40,44 @@ const filter = (array, email, color) => {
 const testArray = ["bees", "peas", "Wiis", "skis"];
 
 console.log(filter(teamTwo, "hello@ellelawrence.com", "black"));
+
+const mainText = document.querySelector('#main');
+
+mainText.innerHTML = "Other text";
+
+const mainBtn = document.getElementById("main-btn");
+
+// console.log(mainBtn);
+
+// const mainBtn = document.querySelector('#main-btn');
+
+// console.log(mainBtn);
+
+// function askUser(user) {
+//     return `please go to bed ${user}`;
+// }
+
+// function threatenUser(user) {
+//     return `march that caboose on up to bed NOW, ${user}`;
+// }
+
+// function twoArguments(user, cb) {
+//     return cb(user);
+// }
+
+// console.log(twoArguments("Randall", askUser));
+// console.log(twoArguments("Randall", threatenUser));
+
+
+const changeText = (event) => {
+    if(event.target.id === "main-btn") {
+        document.querySelector('#text').innerHTML = "You clicked that button";
+    }
+}
+
+const wholeBody = document.querySelector('body');
+
+//mainBtn.addEventListener('click', changeText);
+
+wholeBody.addEventListener('click', changeText);
+
